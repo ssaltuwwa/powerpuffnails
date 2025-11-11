@@ -55,10 +55,6 @@ Status: COMPLETED The Google Maps API is integrated on the contact page, adding 
 
 Status: COMPLETED All features and design choices align perfectly with the "Nail Salon" theme, providing a positive user experience.
 
-10. Overall Presentation
-
-(This criterion is assessed during the oral presentation.)
-
 
 • Technologies Used
 
