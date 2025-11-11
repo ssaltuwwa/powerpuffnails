@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Powerpuff</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <script>
+        (function() {
+            const isDarkMode = localStorage.getItem('darkMode') === 'true';
+            if (isDarkMode) {
+                document.documentElement.classList.add('dark-mode');
+            }
+            document.documentElement.classList.add('theme-loading');
+        })();
+    </script>
+    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="style.css"></noscript>
+    <meta name="description" content="PowerPuff Nail Salon - Professional nail care services in Astana. Manicure, pedicure, nail art, and spa treatments.">
+    <meta name="keywords" content="nail salon, manicure, pedicure, nail art, Astana, beauty salon">
+    <meta name="author" content="PowerPuff Girls Team">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <div class="dark-mode-toggle">
+        <button class="theme-toggle-btn" id="darkModeToggle" aria-label="Toggle dark mode">
+            <span class="theme-icon">
+                <i class="fas fa-moon"></i>
+            </span>
+            <span class="theme-text">Dark Mode</span>
+        </button>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-sparkles me-2"></i>POWERPUFF
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="we-do.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row main-wrapper">
+            <aside class="col-lg-2 col-md-3 sidebar">
+                <h3><i class="fas fa-link me-2"></i>Quick Links</h3>
+                <ul>
+                    <li onclick="scrollToSection('booking')">Book Appointment</li>
+                    <li onclick="scrollToSection('contact-info')">Contact Info</li>
+                    <li onclick="scrollToSection('location')">Our Location</li>
+                    <li onclick="scrollToSection('hours')">Working Hours</li>
+                </ul>
+            </aside>
+
+            <main class="col-lg-10 col-md-9 main-content">
+                <section class="hero-section text-center mb-5">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <h1 class="display-4 fw-bold mb-4">Get in Touch</h1>
+                            <p class="lead text-muted mb-4">Ready to transform your nails? Book an appointment or reach out to us - we'd love to hear from you!</p>
+                            <div class="btn-group-custom justify-content-center">
+                                <a href="#booking" class="btn btn-primary btn-lg">Book Now</a>
+                                <a href="tel:+77172675920" class="btn btn-outline-primary btn-lg">Call Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="row g-4">
+                    <div class="col-lg-4" id="contact-info">
+                        <div class="card shadow-sm border-0 h-100">
+                            <div class="card-body p-4">
+                                <h3 class="h4 mb-4 text-center">Contact Information</h3>
+                                
+                                <div class="contact-item mb-4">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="contact-icon icon-chip bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3 icon-chip-darkonly">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                        </div>
+                                        <h5 class="h6 mb-0 text-primary">Our Location</h5>
+                                    </div>
+                                    <p class="mb-0 ps-5">123 Beauty Street<br>Astana, Kazakhstan 010000</p>
+                                </div>
+                                
+                                <div class="contact-item mb-4">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="contact-icon icon-chip bg-success text-white rounded-circle d-flex align-items-center justify-content-center me-3 icon-chip-darkonly">
+                                            <i class="fas fa-phone"></i>
+                                        </div>
+                                        <h5 class="h6 mb-0 text-success">Phone Number</h5>
+                                    </div>
+                                    <p class="mb-1 ps-5">+7 717 267 59 20</p>
+                                    <small class="text-muted ps-5">Call or WhatsApp available</small>
+                                </div>
+                                
+                                <div class="contact-item mb-4">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="contact-icon icon-chip bg-danger text-white rounded-circle d-flex align-items-center justify-content-center me-3 icon-chip-darkonly">
+                                            <i class="fas fa-envelope"></i>
+                                        </div>
+                                        <h5 class="h6 mb-0 text-danger">Email Address</h5>
+                                    </div>
+                                    <p class="mb-0 ps-5">powerpuff@yahoo.com</p>
+                                    <small class="text-muted ps-5">Response within 24 hours</small>
+                                </div>
+                                
+                                <div class="contact-item mb-4" id="hours">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="contact-icon icon-chip bg-warning text-dark rounded-circle d-flex align-items-center justify-content-center me-3 icon-chip-darkonly">
+                                            <i class="fas fa-clock"></i>
+                                        </div>
+                                        <h5 class="h6 mb-0 text-warning">Working Hours</h5>
+                                    </div>
+                                    <div class="ps-5">
+                                        <p class="mb-1"><strong>Mon - Fri:</strong> 9:00 AM - 8:00 PM</p>
+                                        <p class="mb-1"><strong>Saturday:</strong> 10:00 AM - 6:00 PM</p>
+                                        <p class="mb-0"><strong>Sunday:</strong> 11:00 AM - 5:00 PM</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <div class="contact-icon icon-chip bg-info text-white rounded-circle d-flex align-items-center justify-content-center me-3 icon-chip-darkonly">
+                                            <i class="fas fa-bolt"></i>
+                                        </div>
+                                        <h5 class="h6 mb-0 text-info">Quick Contact</h5>
+                                    </div>
+                                    <div class="row g-2 ps-5">
+                                        <div class="col-12">
+                                            <a href="tel:+77172675920" class="btn btn-outline-primary w-100">
+                                                <i class="fas fa-phone me-2"></i>Call Now
+                                            </a>
+                                        </div>
+                                        <div class="col-12">
+                                            <a href="https://wa.me/77172675920" class="btn btn-outline-success w-100">
+                                                <i class="fab fa-whatsapp me-2"></i>WhatsApp
+                                            </a>
+                                        </div>
+                                        <div class="col-12">
+                                            <a href="/cdn-cgi/l/email-protection#4f3f20382a3d3f3a2929212e26233c0f362e272020612c2022" class="btn btn-outline-danger w-100">
+                                                <i class="fas fa-envelope me-2"></i>Email Us
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-8" id="booking">
+                        <div class="card shadow-lg border-0">
+                            <div class="card-header bg-gradient-primary text-white py-4">
+                                <h2 class="h3 mb-0 text-center">Book Your Appointment</h2>
+                                <p class="text-center mb-0 opacity-75">Complete our quick 3-step booking process</p>
+                            </div>
+                            <div class="card-body p-4">
+                                <div class="step-indicators mb-4">
+                                    <div class="step-indicator active" data-step="1">
+                                        <div class="step-number">1</div>
+                                        <div class="step-label">Your Info</div>
+                                    </div>
+                                    <div class="step-indicator" data-step="2">
+                                        <div class="step-number">2</div>
+                                        <div class="step-label">Service & Time</div>
+                                    </div>
+                                    <div class="step-indicator" data-step="3">
+                                        <div class="step-number">3</div>
+                                        <div class="step-label">Confirmation</div>
+                                    </div>
+                                </div>
+
+                                <div class="progress-container mb-4">
+                                    <div class="progress-bar" style="width: 33%"></div>
+                                </div>
+                                
+                                <form class="multi-step-form" id="bookingForm" novalidate data-booking="true">
+                                    <div class="form-step active" data-step="1">
+                                        <h4 class="mb-4 text-center">Personal Information</h4>
+                                        <div class="row g-3">
+                                            <div class="col-md-6">
+                                                <label class="form-label fw-semibold">Full Name *</label>
+                                                <input type="text" class="form-control" id="bookingName" required placeholder="Enter your full name">
+                                                <div class="invalid-feedback">Please provide your full name.</div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label fw-semibold">Phone Number *</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-text">+7</span>
+                                                    <input type="tel" class="form-control" id="bookingPhone" required 
+                                                        placeholder="777 123 4567" pattern="[0-9]{10}" 
+                                                        title="Please enter a 10-digit phone number">
+                                                </div>
+                                                <div class="invalid-feedback">Please provide a valid 10-digit phone number.</div>
+                                            </div>
+                                            <div class="col-12">
+                                                <label class="form-label fw-semibold">Email Address</label>
+                                                <input type="email" class="form-control" id="bookingEmail" placeholder="your.email@example.com">
+                                                <div class="form-text">We'll send booking confirmation to this email</div>
+                                            </div>
+                                        </div>
+                                        <div class="step-controls mt-4">
+                                            <button type="button" class="btn btn-outline-secondary reset-form">
+                                                <i class="fas fa-undo me-2"></i>Reset Form
+                                            </button>
+                                            <button type="button" class="btn btn-primary next-step">
+                                                Continue <i class="fas fa-arrow-right ms-2"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-step" data-step="2">
+                                        <h4 class="mb-4 text-center">Service & Scheduling</h4>
+                                        <div class="row g-3">
+                                            <div class="col-md-6">
+                                                <label class="form-label fw-semibold">Choose Service *</label>
+                                                <select name="service" class="form-select" id="bookingService" required>
+                                                    <option value="">Select a service</option>
+                                                    <option value="basic-manicure">Basic Manicure - 8,000₸</option>
+                                                    <option value="luxury-manicure">Luxury Manicure - 12,000₸</option>
+                                                    <option value="nail-art">Creative Nail Art - 15,000₸</option>
+                                                    <option value="spa-pedicure">Spa Pedicure - 18,000₸</option>
+                                                    <option value="full-set">Full Set with Design - 20,000₸</option>
+                                                </select>
+                                                <div class="invalid-feedback">Please select a service.</div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label fw-semibold">Preferred Date *</label>
+                                                <input type="date" class="form-control" id="bookingDate" required min="" name="date">
+                                                <div class="invalid-feedback">Please select a date.</div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label fw-semibold">Preferred Time *</label>
+                                                <select class="form-select" id="bookingTime" name="time" required>
+                                                    <option value="">Select time</option>
+                                                    <option value="09:00">09:00 AM</option>
+                                                    <option value="10:00">10:00 AM</option>
+                                                    <option value="11:00">11:00 AM</option>
+                                                    <option value="12:00">12:00 PM</option>
+                                                    <option value="13:00">01:00 PM</option>
+                                                    <option value="14:00">02:00 PM</option>
+                                                    <option value="15:00">03:00 PM</option>
+                                                    <option value="16:00">04:00 PM</option>
+                                                    <option value="17:00">05:00 PM</option>
+                                                </select>
+                                                <div class="invalid-feedback">Please select a time.</div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label fw-semibold">Duration</label>
+                                                <select class="form-select" id="bookingDuration">
+                                                    <option value="60">60 minutes</option>
+                                                    <option value="90">90 minutes</option>
+                                                    <option value="120">120 minutes</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12">
+                                                <label class="form-label fw-semibold">Special Requests & Design Preferences</label>
+                                                <textarea class="form-control" id="bookingRequests" rows="3" placeholder="Tell us about your design ideas, color preferences, or any special requirements..."></textarea>
+                                                <div class="form-text">We'll do our best to accommodate your requests</div>
+                                            </div>
+                                        </div>
+                                        <div class="step-controls mt-4">
+                                            <button type="button" class="btn btn-outline-primary prev-step">
+                                                <i class="fas fa-arrow-left me-2"></i>Back
+                                            </button>
+                                            <button type="button" class="btn btn-primary next-step">
+                                                Continue <i class="fas fa-arrow-right ms-2"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-step" data-step="3">
+                                        <h4 class="mb-4 text-center">Confirm Your Booking</h4>
+                                        <div class="booking-summary card border-0 bg-light mb-4">
+                                            <div class="card-body p-3">
+                                                <h5 class="card-title mb-3">📋 Booking Summary</h5>
+                                                <div id="summaryContent" class="row g-2">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="alert alert-success border-0 mb-4">
+                                            <div class="d-flex">
+                                                <i class="fas fa-check-circle text-success me-3"></i>
+                                                <div>
+                                                    <h6 class="alert-heading mb-2">Ready to complete your booking!</h6>
+                                                    <p class="mb-0">Click "Submit Booking" to confirm. We'll contact you within 2 hours to finalize the details.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-check mb-4">
+                                            <input class="form-check-input" type="checkbox" id="bookingAgreement" required>
+                                            <label class="form-check-label" for="bookingAgreement">
+                                                I agree to the terms and conditions and confirm that I've provided accurate information
+                                            </label>
+                                            <div class="invalid-feedback">You must agree before submitting.</div>
+                                        </div>
+                                        
+                                        <div class="step-controls">
+                                            <button type="button" class="btn btn-outline-primary prev-step">
+                                                <i class="fas fa-arrow-left me-2"></i>Back
+                                            </button>
+                                            <button type="submit" class="btn btn-success">
+                                                <i class="fas fa-calendar-check me-2"></i>Submit Booking
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="mt-2" data-booking-list></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="mt-5" id="location">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body p-4">
+                            <h4 class="h5 mb-3">📍 Find Our Salon</h4>
+                            <div class="map-container bg-light rounded-3 p-4 text-center">
+                                <div class="map-placeholder">
+                                    <i class="fas fa-map-marked-alt fa-3x text-primary mb-3"></i>
+                                    <h5 class="text-primary mb-2">PowerPuff Nail Salon</h5>
+                                    <p class="text-muted mb-3">123 Beauty Street, Astana</p>
+                                    <div class="d-flex justify-content-center gap-3 flex-wrap">
+                                        <div class="text-center">
+                                            <i class="fas fa-parking text-success mb-1"></i>
+                                            <small class="d-block text-muted">Parking Available</small>
+                                        </div>
+                                        <div class="text-center">
+                                            <i class="fas fa-subway text-info mb-1"></i>
+                                            <small class="d-block text-muted">Near Metro Station</small>
+                                        </div>
+                                        <div class="text-center">
+                                            <i class="fas fa-wheelchair text-warning mb-1"></i>
+                                            <small class="d-block text-muted">Wheelchair Accessible</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                    <section id="dynamic-content" class="mt-5">
+                        <div class="row g-4" id="additionalServicesContainer">
+                        </div>
+                    </section>
+            </main>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-5 mt-6">
+        <div class="container">
+            <div id="weather-display" class="text-center mb-3"></div>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="text-pink">
+                        <i class="fas fa-sparkles me-2"></i>PowerPuff Nail Salon
+                    </h5>
+                    <p class="opacity-75">Professional nail care and beauty treatments in a cozy, welcoming atmosphere where your style comes to life.</p>
+                    <div class="footer-social mt-3">
+                        <a href="https://instagram.com/sergeyevass"><i class="fab fa-instagram"></i> Instagram</a>
+                        <a href="https://t.me/powerPUFFnails"><i class="fab fa-telegram"></i> Telegram</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5>Contact Info</h5>
+                    <p class="mb-2">
+                        <i class="fas fa-map-marker-alt me-2"></i>
+                        <strong>Address:</strong> 123 Beauty Street, Astana
+                    </p>
+                    <p class="mb-2">
+                        <i class="fas fa-phone me-2"></i>
+                        <strong>Phone:</strong> +7 717 267 59 20
+                    </p>
+                    <p class="mb-0">
+                        <i class="fas fa-envelope me-2"></i>
+                        <strong>Email:</strong> powerpuff@yahoo.com
+                    </p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5>Stay Updated</h5>
+                    <p class="opacity-75">Subscribe to get updates on special offers and new designs!</p>
+                    <button class="btn btn-outline-light" onclick="showPopupForm()">
+                        <i class="fas fa-paper-plane me-2"></i>Subscribe Now
+                    </button>
+                </div>
+            </div>
+            <div class="footer-team text-center pt-4 border-top border-secondary">
+                <p class="mb-2">
+                    <i class="fas fa-heart text-pink me-2"></i>
+                    Team: PowerPuff Girls | Members: <strong>Saltanat</strong>, <strong>Alzira</strong>, <strong>Shugyla</strong>
+                </p>
+                <p class="mb-0 opacity-75">&copy; 2025 PowerPuff Nail Salon. All Rights Reserved</p>
+            </div>
+    
+        </div>
+    </footer>
+
+    <div class="popup-overlay" id="popupOverlay"></div>
+        <div class="popup-form" id="popupForm">
+            <div class="popup-header">
+                <h4><i class="fas fa-paper-plane me-2"></i>Subscribe to Our Newsletter</h4>
+                <button class="close-popup" id="closePopup">&times;</button>
+            </div>
+            <form class="form-custom" id="subscribeForm">
+                <div class="mb-3">
+                    <label for="subscriberName" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="subscriberName" placeholder="Enter your name">
+                </div>
+                <div class="mb-3">
+                    <label for="subscriberEmail" class="form-label">Email Address *</label>
+                    <input type="email" class="form-control" id="subscriberEmail" required placeholder="Enter your email">
+                </div>
+                <div class="mb-3">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" required>
+                        I agree to receive updates and promotions
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">
+                    <i class="fas fa-paper-plane me-2"></i>Subscribe Now
+                </button>
+            </form>
+    </div>
+
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="script.js"></script>
+    <script src="jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        window.addEventListener('load', function() {
+            setTimeout(() => {
+                document.documentElement.classList.remove('theme-loading');
+            }, 100);
+        });
+    </script>
+</body>
+</html>
