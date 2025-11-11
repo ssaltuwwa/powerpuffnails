@@ -1,8 +1,8 @@
 💅 Powerpuff Nail Salon: Project Documentation
 
 Team members: Alzira Kuanyshbekova, Saltanat Sergeeyeva, Shugyla Akhit
-Project Overview
 
+Project Overview
 
 Powerpuff Nail Salon is a comprehensive, responsive web application designed as an informational and booking platform for a modern nail and beauty salon. The project successfully integrates advanced front-end features, demonstrating strong proficiency in HTML, CSS, and advanced JavaScript.
 
@@ -23,7 +23,7 @@ This project implements the following advanced functionalities:
  External API Integration: Integration with the Google Maps API on the contact page to display the salon's precise location.
 
 
-✅ Final Project Criteria Checklist
+Final Project Criteria Checklist
 
 The project has been developed to meet all mandatory requirements:
 
